@@ -1,43 +1,60 @@
-Diretrizes do desafio
-===========================
+# Desafio MKS-Frontend
 
-O objetivo principal desse teste é avaliar sua capacidade de escrever código limpo, bem testado e reutilizável. Ao terminar, faça o deploy da aplicação e mande-nos o link.
+## Descrição do desafio
 
-Tarefa (funcional)
----------------
+O desafio consiste em criar uma aplicação web que consuma a API disponibilizada, para listar produtos da loja MKS, com a possibilidade do usuário adicionar produtos ao seu carrinho e alterar a quantidade desejada.
 
-Para esse desafio, você deve consumir nossa [API REST de produtos](https://mks-frontend-challenge-04811e8151e6.herokuapp.com/api-docs/) para exibir a lista de produtos da loja.
+## Como rodar o projeto
 
-A aplicação deve conter apenas uma página/rota e um carrinho.
+Para rodar o projeto, primeiro você precisa clonar o repositório com o comando:
 
-- <b>Loja</b>: A lista de produtos deve ser buscada de nossa API, use um shimmer/skeleton enquanto estiver em loading.
- 
-- <b>Carrinho</b>: O carrinho deve conter todos os produtos selecionados, juntamente com a opção de aumentar a quantidade de cada produto selecionado.
+```
+git clone <repositosio>
+```
 
-Use do Jest e a testing-library para realizar os testes unitários.
+Apos clonar o repositório, você precisa entrar na pasta do projeto com o comando:
 
-Recursos
----------------
+```
+cd mks-frontend-challenge
+```
 
-UI/UX: [Figma loja](https://www.figma.com/file/Z4z8osDbK1ET7cjNzFRMrK/MKS-Front-end-challenge?node-id=0%3A1) PS: O design system está incluso, incluindo a fonte.
+Neste ponto você pode escolher rodar a imagem docker com o comando:
 
-API: [API REST de produtos](https://mks-frontend-challenge-04811e8151e6.herokuapp.com/api-docs/) para exibir a lista de produtos da loja.
+```
+docker-compose up --build
+```
 
-Ferramentas requeridas
----------------
+Ou se preferir, pode rodar o projeto localmente. Primeiramente instalando as dependencias:
 
-1. TypeScript
-2. React ou Next.js (Preferimos Next.js)
-3. React-query
-4. Styled-components
-5. Jest
+```
+yarn install
+```
 
-Aspectos técnicos
----------------
+E depois rodando o projeto com o comando:
 
-Todas as ferramentas listadas anteriormente são mandatórias, além delas sinta-se livre para utilizar de qualquer outra technologia que te seja confortável.
+```
+yarn start
+```
 
-Faça o deploy!
----------------
 
-Ao finalizar, faça o deploy no lugar que te for confortável (exemplo: Vercel, Netlify, Heroku, Amazon EC2, App Runner, etc)
+
+## Requisitos Funcionais
+
+- [] Consumir API com a lista de produtos
+- [] Shimmer effect enquanto os dados são carregados
+- [] Listar os produtos da loja MKS
+- [] Adicionar produtos ao carrinho
+- [] Remover produtos do carrinho
+- [] Alterar a quantidade de cada produto no carrinho
+- [] Mostrar o valor total do carrinho
+
+
+## Requisitos não funcionais
+
+- [] Utilizar React
+- [] Utilizar Typescript
+- [] Utilizar Styled Components
+- [] Utilizar React-Query
+- [] Utilizar Jest
+
+
