@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Teste do componente Footer Testa carregamento correto 1`] = `
+<footer
+  className="sc-bdfCDU kdpXOj"
+>
+  MKS sistemas © Todos os direitos reservados
+</footer>
+`;
+
+exports[`renders correctly 1`] = `
+<footer
+  className="sc-bdfCDU kdpXOj"
+>
+  MKS sistemas © Todos os direitos reservados
+</footer>
+`;

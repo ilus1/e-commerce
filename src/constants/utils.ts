@@ -1,0 +1,1 @@
+export const footerMessage = 'MKS sistemas © Todos os direitos reservados'

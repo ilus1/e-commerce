@@ -2,6 +2,7 @@ import { fireEvent, render } from '@testing-library/react'
 
 import Topbar from '../../components/Topbar'
 
+
 describe('Teste do componente Topbar', () => {
   it('Teste do componente Topbar', () => {
     const component = render(
