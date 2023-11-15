@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 import colors from '../../constants/colors'
 
-export const Container = styled.div`
+export const Container = styled.header`
   width: 100%;
   height: 101px;
   background: ${colors.primary};

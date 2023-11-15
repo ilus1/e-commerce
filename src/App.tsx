@@ -1,9 +1,9 @@
-import Topbar from './components/Topbar'
+import ShoppingList from './pages/ShoppingList'
 
 function App() {
 
   return (
-    <Topbar />
+    <ShoppingList />
   )
 }
 
