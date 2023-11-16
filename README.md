@@ -40,13 +40,13 @@ yarn start
 
 ## Requisitos Funcionais
 
-- [ ] Consumir API com a lista de produtos
-- [ ] Shimmer effect enquanto os dados são carregados
-- [ ] Listar os produtos da loja MKS
-- [ ] Adicionar produtos ao carrinho
-- [ ] Remover produtos do carrinho
-- [ ] Alterar a quantidade de cada produto no carrinho
-- [ ] Mostrar o valor total do carrinho
+- [x] Consumir API com a lista de produtos
+- [x] Shimmer effect enquanto os dados são carregados
+- [x] Listar os produtos da loja MKS
+- [x] Adicionar produtos ao carrinho
+- [x] Remover produtos do carrinho
+- [x] Alterar a quantidade de cada produto no carrinho
+- [x] Mostrar o valor total do carrinho
 
 
 ## Requisitos não funcionais
@@ -54,7 +54,7 @@ yarn start
 - [x] Utilizar React
 - [x] Utilizar Typescript
 - [x] Utilizar Styled Components
-- [ ] Utilizar React-Query
+- [x] Utilizar React-Query
 - [x] Utilizar Jest
-
+- [ ] Utilizar Framer-Motion
 
