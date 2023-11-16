@@ -3,6 +3,7 @@
 exports[`Componente de Listagem de produtos Testa carregamento correto 1`] = `
 <ul
   className="sc-kEjbdu MysKI"
+  data-testid="product-list"
 >
   <li
     className="sc-bdfCDU dsTrPs"

@@ -28,7 +28,7 @@ interface ProductListProps {
 
 function ProductList({ products, cartItems, onAddProduct, onRemoveProduct }: ProductListProps) {
   return (
-    <Container>
+    <Container data-testid="product-list">
       {products.map((product) => (
         <ProductComponent
           key={product.id}

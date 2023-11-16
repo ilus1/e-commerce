@@ -10,7 +10,7 @@ interface TopbarProps {
 function Topbar({ productCounter, onClick }: TopbarProps) {
 
   return (
-    <Container>
+    <Container data-testid="topbar">
       <Logo />
       <AccessCartButton
         productCounter={productCounter}

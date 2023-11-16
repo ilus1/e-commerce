@@ -4,7 +4,7 @@ import { footerMessage } from '../../constants/utils'
 
 function Footer() {
   return (
-    <Container>
+    <Container data-testid="footer">
       { footerMessage }
     </Container>
   )
