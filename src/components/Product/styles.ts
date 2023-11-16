@@ -4,7 +4,7 @@ import { AddOutlined, RemoveOutlined, DeleteOutline } from '@mui/icons-material'
 
 import colors from '../../constants/colors'
 
-export const Container = styled.div`
+export const Container = styled.li`
   display: flex;
   flex-direction: column;
 

@@ -10,13 +10,13 @@ export const Container = styled.div`
   margin-left: 65px;
 `
 
-export const Acronym = styled.span`
-  font-weight: 600;
+export const Acronym = styled.h1`
   font-size: 40px;
   margin-right: 10px;
 `
 
-export const Name = styled.span`
+export const Name = styled.h1`
   font-size: 20px;
-  margin-top: 6px;
+  font-weight: 300;
+  margin-top: 20px;
 `

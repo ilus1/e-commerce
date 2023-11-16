@@ -56,7 +56,7 @@ function Product({ name, count, price, image, description, onAdd, onRemove }: Pr
             startIcon={<LocalMallOutlined />}
             onClick={onAdd}
           >
-            Adicionar
+            Comprar
           </BuyButton>
         )
       }
