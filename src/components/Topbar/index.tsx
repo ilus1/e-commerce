@@ -1,19 +1,17 @@
-import { useState } from 'react'
-
 import Logo from '../Logo'
 import AccessCartButton from '../Cart/AccessCartButton'
 import { Container } from './styles'
 
-function Topbar() {
-  const [productCounter, setProductCounter] = useState(0)
+interface TopbarProps {
+  productCounter: number
+  onClick: () => void
+}
 
+function Topbar({ productCounter, onClick }: TopbarProps) {
   return (
     <Container>
       <Logo />
-      <AccessCartButton
-        productCounter={productCounter}
-        onClick={setProductCounter}
-      />
+      <AccessCartButton productCounter={productCounter} onClick={onClick} />
     </Container>
   )
 }

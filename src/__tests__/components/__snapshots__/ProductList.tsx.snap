@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Componente de Listagem de produtos Testa carregamento correto 1`] = `
+<div
+  className="sc-kEjbdu MysKI"
+>
+  <div
+    className="sc-bdfCDU dsTrPs"
+  >
+    <img
+      alt="Produto 1"
+      className="sc-gsTDqH bdEbsD"
+      src="url1"
+    />
+    <div
+      className="sc-dlfmHC jnmrdn"
+    >
+      <span
+        className="sc-hKgKIp fFuqJh"
+      >
+        Produto 1
+      </span>
+      <span
+        className="sc-eCstZk iDqxRL"
+      >
+        R$
+        10
+      </span>
+    </div>
+    <span
+      className="sc-jSguLX crZTmf"
+    >
+      Descrição 1
+    </span>
+    <div
+      className="sc-iBPTVF bTHRiV"
+    >
+      <svg
+        aria-hidden={true}
+        className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium sc-jrAGKZ coCHig css-i4bv87-MuiSvgIcon-root"
+        data-testid="DeleteOutlineIcon"
+        focusable="false"
+        onClick={[Function]}
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM8 9h8v10H8V9zm7.5-5-1-1h-5l-1 1H5v2h14V4z"
+        />
+      </svg>
+      1
+      <svg
+        aria-hidden={true}
+        className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium sc-fubDmA cxXTFK css-i4bv87-MuiSvgIcon-root"
+        data-testid="AddOutlinedIcon"
+        focusable="false"
+        onClick={[Function]}
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;

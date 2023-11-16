@@ -6,7 +6,7 @@ import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import colors from '../../../constants/colors'
 
 interface AccessCartButtonProps {
-  onClick: (value: number) => void
+  onClick: () => void
   productCounter: number
 }
 
@@ -25,7 +25,7 @@ function AccessCartButton({ onClick, productCounter = 0 }: AccessCartButtonProps
         variant="contained"
         color="primary"
         startIcon={<ShoppingCartOutlinedIcon />}
-        onClick={() => onClick(productCounter + 1)}
+        onClick={() => onClick()}
       >
         {productCounter}
       </ButtonContainer>

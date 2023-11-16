@@ -4,7 +4,7 @@ import colors from '../../constants/colors'
 
 export const Container = styled.header`
   width: 100%;
-  height: 101px;
+  min-height: 101px;
   background: ${colors.primary};
 
   display: flex;
