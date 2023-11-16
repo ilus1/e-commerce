@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Componente de alterar quantidade de um item no carrinho Testa carregamento correto 1`] = `
+<div
+  className="sc-bdfCDU fhrPBJ"
+>
+  <button
+    className="sc-dlfmHC jhxSjB"
+    onClick={[Function]}
+  >
+    -
+  </button>
+  <p
+    className="sc-gsTDqH iORjDB"
+  >
+    1
+  </p>
+  <button
+    className="sc-dlfmHC jhxSjB"
+    onClick={[Function]}
+  >
+    +
+  </button>
+</div>
+`;

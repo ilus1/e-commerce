@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CartItem Component Testa carregamento correto do componente 1`] = `
+<li
+  className="sc-hKgKIp fFLrTl"
+>
+  <button
+    className="sc-eCstZk bWQkgF"
+    onClick={[Function]}
+  >
+    X
+  </button>
+  <img
+    className="sc-gKsecS hntZsr"
+    src="url1"
+  />
+  <span
+    className="sc-jSguLX dDFcMB"
+  >
+    Produto 1
+  </span>
+  <div
+    className="sc-bdfCDU fhrPBJ"
+  >
+    <button
+      className="sc-dlfmHC jhxSjB"
+      onClick={[Function]}
+    >
+      -
+    </button>
+    <p
+      className="sc-gsTDqH iORjDB"
+    >
+      1
+    </p>
+    <button
+      className="sc-dlfmHC jhxSjB"
+      onClick={[Function]}
+    >
+      +
+    </button>
+  </div>
+  <span
+    className="sc-iBPTVF jogATO"
+  >
+    R$ 
+    10
+  </span>
+</li>
+`;
