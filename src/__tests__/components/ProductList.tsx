@@ -12,6 +12,7 @@ describe('Componente de Listagem de produtos', () => {
 
     const tree = renderer
       .create(<ProductList
+        isLoading={false}
         products={mockProducts}
         cartItems={mockCartItems}
         onAddProduct={mockAddProduct}
@@ -28,6 +29,7 @@ describe('Componente de Listagem de produtos', () => {
     const mockRemoveProduct = jest.fn();
 
     render(<ProductList
+      isLoading={false}
       products={mockProducts}
       cartItems={cartItems}
       onAddProduct={mockAddProduct}
@@ -45,6 +47,7 @@ describe('Componente de Listagem de produtos', () => {
     const mockRemoveProduct = jest.fn();
 
     render(<ProductList
+      isLoading={false}
       products={mockProducts}
       cartItems={cartItems}
       onAddProduct={mockAddProduct}
@@ -63,6 +66,7 @@ describe('Componente de Listagem de produtos', () => {
     const mockRemoveProduct = jest.fn(() => mockProducts.pop());
 
     render(<ProductList
+      isLoading={false}
       products={mockProducts}
       cartItems={cartItems}
       onAddProduct={mockAddProduct}
@@ -79,5 +83,18 @@ describe('Componente de Listagem de produtos', () => {
 
     fireEvent.click(removeButton);
     expect(mockRemoveProduct).toHaveBeenCalledWith(mockCartItems[0]);
+  });
+
+  it('Deve testar loader', () => {
+    render(<ProductList
+      isLoading={true}
+      products={mockProducts}
+      cartItems={[]}
+      onAddProduct={() => {}}
+      onRemoveProduct={() => {}}
+    />);
+
+    const loading = screen.getAllByText('Loading...');
+    expect(loading.length).toBe(8);
   });
 });

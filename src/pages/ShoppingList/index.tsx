@@ -52,10 +52,9 @@ function ShoppingList() {
     }
   }
 
-  console.log(data)
-  if (isLoading) return <p>Loading...</p>;
-
-  if (error) return <p>Error:</p>;
+  if (error) {
+    return <div>Erro ao carregar os produtos</div>;
+  }
 
   return (
     <>
@@ -73,8 +72,9 @@ function ShoppingList() {
         onClick={() => setIsOpen(isOpen => !isOpen)}
       />
       <ProductList
+        isLoading={isLoading}
         cartItems={cartItems}
-        products={data.products}
+        products={data ? data.products : []}
         onAddProduct={handleAddProduct}
         onRemoveProduct={handleRemoveProduct}
       />

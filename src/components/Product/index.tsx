@@ -1,3 +1,5 @@
+import { LocalMallOutlined } from '@mui/icons-material'
+
 import {
   Container,
   BuyButton,
@@ -11,7 +13,6 @@ import {
   RemoveIcon,
   DeleteIcon,
 } from './styles'
-import { LocalMallOutlined } from '@mui/icons-material'
 
 interface Product {
   id: string
