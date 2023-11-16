@@ -39,7 +39,7 @@ describe('Componente de Listagem de produtos', () => {
     expect(mockRemoveProduct).toHaveBeenCalledTimes(1);
   });
 
-  it('Deve mostrar botao de "adicionar" produto ao carrinho', () => {
+  it('Deve mostrar botao de "comprar" produto ao carrinho', () => {
     const cartItems = [{ ...mockCartItems[0], count: 0 }];
     const mockAddProduct = jest.fn();
     const mockRemoveProduct = jest.fn();
@@ -52,7 +52,7 @@ describe('Componente de Listagem de produtos', () => {
     />);
 
     const button = screen.getByTestId('LocalMallOutlinedIcon').closest('button');
-    expect(button?.textContent).toBe('Adicionar');
+    expect(button?.textContent).toBe('Comprar');
     button?.click();
     expect(mockAddProduct).toHaveBeenCalledTimes(1);
   });

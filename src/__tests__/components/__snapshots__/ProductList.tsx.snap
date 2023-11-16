@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Componente de Listagem de produtos Testa carregamento correto 1`] = `
-<div
+<ul
   className="sc-kEjbdu MysKI"
 >
-  <div
+  <li
     className="sc-bdfCDU dsTrPs"
   >
     <img
@@ -61,6 +61,6 @@ exports[`Componente de Listagem de produtos Testa carregamento correto 1`] = `
         />
       </svg>
     </div>
-  </div>
-</div>
+  </li>
+</ul>
 `;
