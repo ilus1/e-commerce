@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Componente Sidebar do carrinho de compras Testa carregamento correto do componente 1`] = `
+<div
+  className="sc-pGaPU eZqOcd"
+>
+  <div
+    className="sc-jrAGKZ eDyfqU"
+  >
+    <h2
+      className="sc-kEjbdu bAzOSX"
+    >
+      Carrinho de compras
+    </h2>
+    <button
+      className="sc-iqHXzD jctJuk"
+      onClick={[Function]}
+    >
+      X
+    </button>
+  </div>
+  <ul
+    className="sc-fubDmA lihiSQ"
+  >
+    <li
+      className="sc-hKgKIp fFLrTl"
+      data-testid="cart-item-component"
+    >
+      <button
+        className="sc-eCstZk bWQkgF"
+        onClick={[Function]}
+      >
+        X
+      </button>
+      <img
+        className="sc-gKsecS hntZsr"
+        src="url1"
+      />
+      <span
+        className="sc-jSguLX dDFcMB"
+      >
+        Produto 1
+      </span>
+      <div
+        className="sc-bdfCDU fhrPBJ"
+      >
+        <button
+          className="sc-dlfmHC jhxSjB"
+          onClick={[Function]}
+        >
+          -
+        </button>
+        <p
+          className="sc-gsTDqH iORjDB"
+        >
+          1
+        </p>
+        <button
+          className="sc-dlfmHC jhxSjB"
+          onClick={[Function]}
+        >
+          +
+        </button>
+      </div>
+      <span
+        className="sc-iBPTVF jogATO"
+      >
+        R$ 
+        10
+      </span>
+    </li>
+  </ul>
+  <div
+    className="sc-crrtmM bdeVfT"
+  >
+    <p
+      className="sc-dQpIV kIcqeN"
+    >
+      Total:
+    </p>
+    <p
+      className="sc-dQpIV kIcqeN"
+    >
+      R$
+      10
+    </p>
+  </div>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium sc-bqyKbq iEbbsA css-1e6y48t-MuiButtonBase-root-MuiButton-root"
+    disabled={false}
+    onBlur={[Function]}
+    onContextMenu={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    Finalizar Compra
+  </button>
+</div>
+`;
