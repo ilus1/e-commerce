@@ -1,8 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CartItem Component Testa carregamento correto do componente 1`] = `
+exports[`Componente de um item do carrinho Testa carregamento correto do componente 1`] = `
 <li
   className="sc-hKgKIp fFLrTl"
+  data-testid="cart-item-component"
 >
   <button
     className="sc-eCstZk bWQkgF"

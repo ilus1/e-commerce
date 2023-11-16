@@ -26,7 +26,7 @@ interface CartItemProps {
 function CartItem({ item, onRemove, onAddItem, onRemoveItem }: CartItemProps) {
   const { photo, name, price } = item;
   return (
-    <Container>
+    <Container data-testid="cart-item-component">
       <CloseButton onClick={() => onRemove(item)}>X</CloseButton>
       <Image src={photo} />
       <Name>{name}</Name>
