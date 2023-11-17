@@ -37,8 +37,8 @@ function Product({ name, count, price, image, description, onAdd, onRemove }: Pr
   return (
     <Container
       as={motion.li}
-      initial={{ x: 30, opacity: 0.5 }}
-      animate={{ x: 0, opacity: 1 }}
+      initial={{ opacity: 0.5 }}
+      animate={{ opacity: 1 }}
       transition={{
         duration: 0.5,
         ease: "easeOut"
