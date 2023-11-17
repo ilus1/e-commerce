@@ -1,7 +1,7 @@
 import Logo from '../Logo'
 import AccessCartButton from '../Cart/AccessCartButton'
-
 import { Container } from './styles'
+
 interface TopbarProps {
   productCounter: number
   onClick: () => void

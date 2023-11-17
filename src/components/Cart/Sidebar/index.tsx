@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { countTotalPrice, removeItemFromCart } from '../../../utils/itemUtils'
+
 import CartItemList from '../CartItemList'
 import {
   Container,
@@ -12,6 +12,7 @@ import {
 } from './styles'
 
 import { sidebarAnimation } from '../../../utils/animationUtils'
+import { countTotalPrice, removeItemFromCart } from '../../../utils/itemUtils'
 
 interface CartItem {
   id: string

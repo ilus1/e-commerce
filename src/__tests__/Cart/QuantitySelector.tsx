@@ -1,8 +1,8 @@
 import renderer from 'react-test-renderer'
-import { render, screen, fireEvent } from '@testing-library/react';
-import QuantitySelector from '../../components/QuantitySelector';
+import { render, screen, fireEvent } from '@testing-library/react'
+import QuantitySelector from '../../components/QuantitySelector'
 
-import { mockCartItems } from '../../__mocks__/products';
+import { mockCartItems } from '../../__mocks__/products'
 
 describe.only('Componente de alterar quantidade de um item no carrinho', () => {
 

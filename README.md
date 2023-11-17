@@ -56,5 +56,5 @@ yarn start
 - [x] Utilizar Styled Components
 - [x] Utilizar React-Query
 - [x] Utilizar Jest
-- [ ] Utilizar Framer-Motion
+- [x] Utilizar Framer-Motion
 

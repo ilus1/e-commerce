@@ -1,10 +1,10 @@
-import renderer from 'react-test-renderer';
-import { render, screen, fireEvent } from '@testing-library/react';
+import renderer from 'react-test-renderer'
+import { render, screen, fireEvent } from '@testing-library/react'
 
-import Sidebar from '../../components/Cart/Sidebar';
+import Sidebar from '../../components/Cart/Sidebar'
 
-import { mockCartItems } from '../../__mocks__/products';
-import { countTotalPrice } from '../../utils/itemUtils';
+import { mockCartItems } from '../../__mocks__/products'
+import { countTotalPrice } from '../../utils/itemUtils'
 
 describe('Componente Sidebar do carrinho de compras', () => {
 

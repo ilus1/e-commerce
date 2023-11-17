@@ -1,4 +1,5 @@
 import { AnimatePresence } from 'framer-motion';
+
 import CartItemComponent from '../CartItem'
 import { Container } from './styles';
 

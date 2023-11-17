@@ -1,9 +1,9 @@
-import renderer from 'react-test-renderer';
-import { render } from '@testing-library/react';
+import renderer from 'react-test-renderer'
+import { render } from '@testing-library/react'
 
-import CartItemList from '../../components/Cart/CartItemList';
+import CartItemList from '../../components/Cart/CartItemList'
 
-import { mockCartItems } from '../../__mocks__/products';
+import { mockCartItems } from '../../__mocks__/products'
 
 describe('Componente da lista de itens do carrinho', () => {
 
