@@ -53,13 +53,14 @@ function ShoppingList() {
   }
 
   if (error) {
-    return <div>Erro ao carregar os produtos</div>;
+    return <h1>Erro ao carregar os produtos</h1>;
   }
 
   return (
     <>
       {isOpen && (
         <Sidebar
+          isOpen={isOpen}
           onChangeCartItemList={setCartItems}
           cartItemList={cartItems}
           onClose={() => setIsOpen(false)}

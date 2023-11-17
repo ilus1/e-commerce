@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import QuantitySelector from '../../QuantitySelector'
 import {
   Container,
@@ -26,7 +27,17 @@ interface CartItemProps {
 function CartItem({ item, onRemove, onAddItem, onRemoveItem }: CartItemProps) {
   const { photo, name, price } = item;
   return (
-    <Container data-testid="cart-item-component">
+    <Container
+      data-testid="cart-item-component"
+      as={motion.li}
+      initial={{ x: 40, opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      transition={{
+        delay: 0.15,
+        duration: 0.8,
+        ease: "easeOut"
+      }}
+    >
       <CloseButton onClick={() => onRemove(item)}>X</CloseButton>
       <Image src={photo} />
       <Name>{name}</Name>

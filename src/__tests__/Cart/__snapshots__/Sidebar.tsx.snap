@@ -3,6 +3,12 @@
 exports[`Componente Sidebar do carrinho de compras Testa carregamento correto do componente 1`] = `
 <div
   className="sc-pGaPU eZqOcd"
+  style={
+    {
+      "opacity": 0,
+      "transform": "translateY(-100%) translateZ(0)",
+    }
+  }
 >
   <div
     className="sc-jrAGKZ eDyfqU"
@@ -25,6 +31,12 @@ exports[`Componente Sidebar do carrinho de compras Testa carregamento correto do
     <li
       className="sc-hKgKIp fFLrTl"
       data-testid="cart-item-component"
+      style={
+        {
+          "opacity": 0,
+          "transform": "translateX(40px) translateZ(0)",
+        }
+      }
     >
       <button
         className="sc-eCstZk bWQkgF"

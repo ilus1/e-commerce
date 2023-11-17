@@ -4,6 +4,12 @@ exports[`Componente de um item do carrinho Testa carregamento correto do compone
 <li
   className="sc-hKgKIp fFLrTl"
   data-testid="cart-item-component"
+  style={
+    {
+      "opacity": 0,
+      "transform": "translateX(40px) translateZ(0)",
+    }
+  }
 >
   <button
     className="sc-eCstZk bWQkgF"

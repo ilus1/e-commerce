@@ -12,6 +12,7 @@ describe('Componente Sidebar do carrinho de compras', () => {
     const tree = renderer
       .create(
         <Sidebar
+          isOpen={true}
           onClose={() => {}}
           cartItemList={mockCartItems}
           onChangeCartItemList={() => {}}
@@ -27,6 +28,7 @@ describe('Componente Sidebar do carrinho de compras', () => {
     const mockOnClose = jest.fn();
     render(
       <Sidebar
+        isOpen={true}
         onClose={mockOnClose}
         cartItemList={[]}
         onChangeCartItemList={() => {}}
@@ -42,6 +44,7 @@ describe('Componente Sidebar do carrinho de compras', () => {
   it('Testa se o total calculado é exibido corretamente', () => {
     render(
       <Sidebar
+        isOpen={true}
         onClose={() => {}}
         cartItemList={mockCartItems}
         onChangeCartItemList={() => {}}
@@ -57,6 +60,7 @@ describe('Componente Sidebar do carrinho de compras', () => {
   it('Testa se o item e removido corretamente da listagem', () => {
     render(
       <Sidebar
+        isOpen={false}
         onClose={() => {}}
         cartItemList={mockCartItems}
         onChangeCartItemList={() => {}}

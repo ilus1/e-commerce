@@ -1,3 +1,4 @@
+import { AnimatePresence } from 'framer-motion';
 import CartItemComponent from '../CartItem'
 import { Container } from './styles';
 
@@ -19,17 +20,19 @@ interface CartItemListProps {
 
 function CartItemList({ cartItemList, onRemoveItem, onAddItem, onRemoveProduct }: CartItemListProps) {
   return (
-    <Container>
-      {cartItemList.map((cartItem) => (
-        <CartItemComponent
-          key={cartItem.id}
-          onRemove={onRemoveProduct}
-          item={cartItem}
-          onAddItem={onAddItem}
-          onRemoveItem={onRemoveItem}
-        />
-      ))}
-    </Container>
+    <AnimatePresence>
+      <Container>
+        {cartItemList.map((cartItem) => (
+          <CartItemComponent
+            key={cartItem.id}
+            onRemove={onRemoveProduct}
+            item={cartItem}
+            onAddItem={onAddItem}
+            onRemoveItem={onRemoveItem}
+          />
+        ))}
+      </Container>
+    </AnimatePresence>
   );
 }
 

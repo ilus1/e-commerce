@@ -7,6 +7,12 @@ exports[`Componente de Listagem de produtos Testa carregamento correto 1`] = `
 >
   <li
     className="sc-bdfCDU dsTrPs"
+    style={
+      {
+        "opacity": 0.5,
+        "transform": "translateX(30px) translateZ(0)",
+      }
+    }
   >
     <img
       alt="Produto 1"

@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import { LocalMallOutlined } from '@mui/icons-material'
 
 import {
@@ -34,7 +35,15 @@ interface ProductProps {
 
 function Product({ name, count, price, image, description, onAdd, onRemove }: ProductProps) {
   return (
-    <Container>
+    <Container
+      as={motion.li}
+      initial={{ x: 30, opacity: 0.5 }}
+      animate={{ x: 0, opacity: 1 }}
+      transition={{
+        duration: 0.5,
+        ease: "easeOut"
+      }}
+    >
       <Image src={image} alt={name} />
       <NamePriceContainer>
         <Name>{name}</Name>

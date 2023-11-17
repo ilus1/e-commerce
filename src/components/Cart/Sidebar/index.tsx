@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import { countTotalPrice, removeItemFromCart } from '../../../utils/itemUtils'
 import CartItemList from '../CartItemList'
 import {
@@ -10,6 +11,8 @@ import {
   BuyButton,
 } from './styles'
 
+import { sidebarAnimation } from '../../../utils/animationUtils'
+
 interface CartItem {
   id: string
   name: string
@@ -20,6 +23,7 @@ interface CartItem {
 }
 
 interface SidebarProps {
+  isOpen: boolean
   onClose: () => void
   cartItemList: CartItem[]
   onChangeCartItemList: (cartItemList: CartItem[]) => void
@@ -27,13 +31,19 @@ interface SidebarProps {
   onAddItem: (cartItem: CartItem) => void
 }
 
-function Sidebar({ onClose, cartItemList, onChangeCartItemList, onAddItem, onRemoveItem }: SidebarProps) {
+function Sidebar({ isOpen, onClose, cartItemList, onChangeCartItemList, onAddItem, onRemoveItem }: SidebarProps) {
   const handleRemoveProduct = (cartItem: CartItem) => {
     onChangeCartItemList(removeItemFromCart(cartItemList, cartItem.id))
   }
 
   return (
-    <Container>
+    <Container
+      as={motion.div}
+      initial={{ y: '-100%', opacity: 0 }}
+      animate={{ y: isOpen ? 0 : '-100%', opacity: isOpen ? 1 : 0 }}
+      exit={{ y: '-100%', opacity: 0 }}
+      transition={sidebarAnimation}
+    >
       <Header>
         <Title>Carrinho de compras</Title>
         <CloseButton onClick={onClose}>X</CloseButton>

@@ -1,18 +1,11 @@
-export const sidebar = {
-  open: (height = 1000) => ({
-    clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
-    transition: {
-      type: "spring",
-      stiffness: 20,
-      restDelta: 2
-    }
-  }),
-  closed: {
-    transition: {
-      delay: 0.5,
-      type: "spring",
-      stiffness: 400,
-      damping: 40
-    }
-  }
+export const sidebarAnimation = {
+  y: {
+    type: "spring",
+    damping: 25,
+    stiffness: 120,
+    duration: 0.7
+  },
+  opacity: {
+    duration: 0.3
+  },
 };
