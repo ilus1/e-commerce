@@ -9,10 +9,10 @@ describe('Teste do componente Topbar', () => {
       <Topbar productCounter={0} onClick={() => {}} />
     );
 
-    const title = component.getByText('MKS');
+    const title = component.getByText('Online');
 
     expect(title).toBeDefined();
-    expect(title.nextSibling?.textContent).toContain("Sistemas");
+    expect(title.nextSibling?.textContent).toContain("Store");
   });
 
 

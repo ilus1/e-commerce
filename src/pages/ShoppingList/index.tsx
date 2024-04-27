@@ -30,6 +30,7 @@ function ShoppingList() {
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
   const { isLoading, error, data } = useQuery('products', () => fetchProducts());
 
+  console.log(data, error, isLoading)
   const handleAddProduct = (product: CartItem | Product) => {
     const item = cartItems.find((item) => item.id === product.id);
 
@@ -53,7 +54,7 @@ function ShoppingList() {
   }
 
   if (error) {
-    return <h1>Erro ao carregar os produtos</h1>;
+    return <h1>Failed to fetch products.</h1>;
   }
 
   return (
@@ -75,7 +76,7 @@ function ShoppingList() {
       <ProductList
         isLoading={isLoading}
         cartItems={cartItems}
-        products={data ? data.products : []}
+        products={data ? data : []}
         onAddProduct={handleAddProduct}
         onRemoveProduct={handleRemoveProduct}
       />

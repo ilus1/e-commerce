@@ -1,36 +1,37 @@
-# Desafio MKS-Frontend
+# Simple e-commerce page
 
-## Descrição do desafio
+## Description
 
-O desafio consiste em criar uma aplicação web que consuma a API disponibilizada, para listar produtos da loja MKS, com a possibilidade do usuário adicionar produtos ao seu carrinho e alterar a quantidade desejada.
+This project is a simple e-commerce page that lists products from a fake API and allows the user to add and remove products from the cart.
 
-## Como rodar o projeto
+## How to run
 
-Para rodar o projeto, primeiro você precisa clonar o repositório com o comando:
+First you need to clone the repository with the command:
+
 
 ```
 git clone <repositosio>
 ```
 
-Apos clonar o repositório, você precisa entrar na pasta do projeto com o comando:
+Then you need to access the project folder with the command:
 
 ```
-cd mks-frontend-challenge
+cd <folder>
 ```
 
-Neste ponto você pode escolher rodar a imagem docker com o comando:
+If you have docker installed, you can run the project with the command:
 
 ```
 docker-compose up --build
 ```
 
-Ou se preferir, pode rodar o projeto localmente. Primeiramente instalando as dependencias:
+If you don't have docker installed, you can run the project by installing the dependencies with the command:
 
 ```
 yarn install
 ```
 
-E depois rodando o projeto com o comando:
+And then run the project with the command:
 
 ```
 yarn start
@@ -38,23 +39,22 @@ yarn start
 
 
 
-## Requisitos Funcionais
+## Functional requirements
 
-- [x] Consumir API com a lista de produtos
-- [x] Shimmer effect enquanto os dados são carregados
-- [x] Listar os produtos da loja MKS
-- [x] Adicionar produtos ao carrinho
-- [x] Remover produtos do carrinho
-- [x] Alterar a quantidade de cada produto no carrinho
-- [x] Mostrar o valor total do carrinho
+- [x] Shimmer effect while data is being loaded
+- [x] List the products from the store
+- [x] Add products to the cart
+- [x] Remove products from the cart
+- [x] Change the quantity of each product in the cart
+- [x] Show the total value of the cart
+- [x] Show the total quantity of products in the cart
 
+## Non-functional requirements
 
-## Requisitos não funcionais
-
-- [x] Utilizar React
-- [x] Utilizar Typescript
-- [x] Utilizar Styled Components
-- [x] Utilizar React-Query
-- [x] Utilizar Jest
-- [x] Utilizar Framer-Motion
-
+- [x] The project must use React
+- [x] The project must use Redux
+- [x] The project must use Typescript
+- [x] The project must use Styled Components
+- [x] The project must use React-Query
+- [x] The project must use Jest
+- [x] The project must use Framer-Motion

@@ -1,6 +1,6 @@
-export const footerMessage = 'MKS sistemas © Todos os direitos reservados'
+export const footerMessage = 'Online Store © Todos os direitos reservados'
 
-export const apiURL = 'https://mks-frontend-challenge-04811e8151e6.herokuapp.com/api/v1/products?page=1&rows=8&sortBy=id&orderBy=DESC'
+export const apiURL = 'https://s3ilus.s3.sa-east-1.amazonaws.com/ecommerceproducts.json'
 
 export const mountLoaders = (Loader: JSX.Element, amount: number): JSX.Element[] => {
   const loaderArray = []
